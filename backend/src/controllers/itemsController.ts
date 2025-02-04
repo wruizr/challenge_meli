@@ -14,7 +14,7 @@ export const searchItemsController = async (req: Request, res: Response) => {
     }
     try {
         const response = await searchItems(q)
-        const items: Item[] = response.results.slice(0, 4).map((item) => ({
+        const items: Item[] = response.results.map((item) => ({
             id: item.id,
             title: item.title,
             price: {

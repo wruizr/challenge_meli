@@ -15,7 +15,7 @@ class HttpAdapter {
             const response: AxiosResponse<T> = await this.axiosInstance.get(url)
             return response.data
         } catch (error) {
-            throw handleError(error, 'HTTP GET request failed')
+            throw handleError(error, 'HTTP GET solicitud fallida')
         }
     }
 }

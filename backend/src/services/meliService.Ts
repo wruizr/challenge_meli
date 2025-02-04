@@ -17,7 +17,7 @@ export const searchItems = async (query: string): Promise<ItemsResponse> => {
         const response = await httpAdapter.get<ItemsResponse>(`/sites/MLA/search?q=${query}`)
         return response
     } catch (error) {
-        throw handleError(error, `Error searching items`) 
+        throw handleError(error, `Error buscando artículos`) 
     }
 }
 
@@ -34,6 +34,6 @@ export const getItemDetail = async (id: string) => {
             sellerResponse,
         }
     } catch (error) {
-        throw handleError(error, `Error getting item details`)
+        throw handleError(error, `Error obteniendo detalles del artículo`)
     }
   };
