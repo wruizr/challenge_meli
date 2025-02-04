@@ -1,9 +1,7 @@
 import app from './app'
-import dotenv from 'dotenv'
+import { CONFIG } from './config'
 
-dotenv.config()
-
-const PORT = process.env.PORT || 3000
+const { PORT } = CONFIG
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto http://localhost:${PORT}`)
