@@ -1,0 +1,10 @@
+.ml-main {
+  display: flex;
+  justify-content: center;
+}
+
+.ml-main-section {
+  width: clamp(320px, 100%, 1200px);
+  margin: 30px 10px;
+  background-color: white;
+}

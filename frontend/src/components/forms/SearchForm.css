@@ -1,0 +1,45 @@
+.ml-search-form {
+  width: clamp(320px, 90%, 980px);
+  display: flex;
+  background-color: white;
+  padding: 10px 0px 10px 15px;
+}
+
+.ml-search-form:focus-within,
+.ml-search-form:hover {
+  outline: 1.5px solid #007bff;
+}
+
+.ml-search-form-input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.55);
+  border: none;
+  outline: none;
+}
+
+.ml-search-form-input:hover,
+.ml-search-form-input:focus,
+.ml-search-form-input:active {
+  border: none;
+  outline: none;
+}
+
+.ml-search-form-btn {
+  display: flex;
+  max-width: 50px;
+  width: 100%;
+  align-items: center;
+  border: none;
+  border-left: 1px solid #ebebeb;
+  border-radius: initial;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.ml-search-form-btn-icon {
+  width: 20px;
+}

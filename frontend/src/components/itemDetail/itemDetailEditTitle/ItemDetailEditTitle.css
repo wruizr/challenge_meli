@@ -1,0 +1,138 @@
+.ml-card-detail-edit {
+  margin-top: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ml-card-detail-edit > div:not(:last-child) {
+  padding: 20px 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.ml-card-detail-edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ml-card-detail-edit-header h3,
+p {
+  margin: 0;
+}
+
+.ml-card-detail-edit-header p {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ml-card-detail-edit-header button {
+  width: 20px;
+  height: 20px;
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+}
+
+.ml-card-detail-edit-body-inputs {
+  width: 100%;
+  display: flex;
+  padding: 10px 10px 10px 15px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.ml-card-detail-edit-body-inputs:focus-within,
+.ml-card-detail-edit-body-inputs:hover {
+  outline: 1.5px solid #007bff;
+}
+
+.ml-card-detail-edit-body input {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+.ml-card-detail-edit-body a {
+  display: flex;
+  width: 130px;
+  align-items: center;
+  border-radius: initial;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: space-between;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.ml-card-detail-edit-body > p {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 5px;
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.ml-card-detail-edit-footer {
+  padding: 20px 30px;
+  text-align: end;
+}
+
+.ml-card-detail-edit-footer button {
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ml-card-detail-edit-footer .button-disabled-one {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border: none;
+}
+
+.ml-card-detail-edit-footer .button-disabled-two {
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.button-active-one {
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+}
+
+.button-active-two {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.content {
+  display: block;
+}
+
+.content-hidden {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .ml-card-detail-edit-body-inputs {
+    flex-wrap: wrap;
+  }
+
+  .ml-card-detail-edit-body a {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .ml-card-detail-edit-footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+}
