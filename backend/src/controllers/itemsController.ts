@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { getItemDetail, searchItems } from '../services/meliService'
 import { Author, GenerateTitleResponse, Item, ItemDetail, ItemDetailResponse, ItemsResponse } from '../interfaces/apiResponse';
+import { getItemDetail, searchItems } from '../services/meliService'
 
 const author: Author = {
   name: 'Wilson',
