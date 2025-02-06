@@ -1,8 +1,9 @@
 import React, { Suspense } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Layout } from "./components/layouts/layout"
-const ItemsResult = React.lazy(() => import('./components/itemsResult/itemsResult')) 
-const ItemDetail = React.lazy(() => import('./components/itemDetail/itemDetail'))
+import { Layout } from "./components/layouts/Layout"
+import './app.css'
+const ItemsResult = React.lazy(() => import('./components/itemsResult/ItemsResult')) 
+const ItemDetail = React.lazy(() => import('./components/itemDetail/ItemDetail'))
 
 function App() {
 
