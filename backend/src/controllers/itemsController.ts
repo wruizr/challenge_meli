@@ -70,13 +70,13 @@ export const getItemDetailController = async (req: Request, res: Response) => {
   };
 
   export const generateTitleController = async (req: Request, res: Response) => {
-    const { id } = req.params;
+    const { title } = req.params;
     try {
-      const title = `Título generado para el item ${id}`;
+      const titleIA = `Título optimizado con IA ${title}`;
   
       const response: GenerateTitleResponse = {
         author,
-        title,
+        title: titleIA,
         useIAIntegration: true,
       };
   
@@ -85,3 +85,20 @@ export const getItemDetailController = async (req: Request, res: Response) => {
       res.status(500).json({  error: 'Error al generar el resultado.' });
     }
   };
+
+  export const saveItemTitleController = async (req: Request, res: Response) => {
+    const { title, useIAIntegration } = req.body;
+    try{
+      if (!title) {
+        res.status(400).json({ message: 'El título es requerido' });
+      }
+
+      if (title.toLowerCase().includes('bomba')) {
+        res.status(400).json({ message: 'No se pudo guardar el título' });
+      }
+
+      res.status(200).json({ message: `Título guardado correctamente: ${title}` });
+    } catch (error) {
+        res.status(500).json({ error: 'Error al obtener los resultados.'})
+    }
+}
