@@ -1,0 +1,31 @@
+.ml-header {
+  background: #ffe600;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.ml-header-content {
+  width: clamp(320px, 100%, 1200px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ml-header-content-logo {
+  width: clamp(150px, 100%, 180px);
+  margin-right: 34px;
+}
+
+@media (max-width: 768px) {
+  .ml-header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ml-header-content-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

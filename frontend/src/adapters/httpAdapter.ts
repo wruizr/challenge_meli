@@ -18,6 +18,15 @@ class HttpAdapter {
             throw handleError(error, 'HTTP GET solicitud fallida')
         }
     }
+
+    async post<T>(url: string, data: any): Promise<T> {
+        try {
+            const response: AxiosResponse<T> = await this.axiosInstance.post<T>(url, data);
+            return response.data;
+        } catch (error) {
+            throw handleError(error, 'HTTP POST solicitud fallida');
+        }
+    }
 }
 
 export default HttpAdapter
